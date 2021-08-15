@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif; }
+
+.heading-primary {
+  text-align: center;
+  font-family: "Overpass", sans-serif; }
+  .heading-primary--main {
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 1rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 300; }
+
+.header {
+  height: 85vh;
+  width: 100%;
+  padding-top: 3.5rem;
+  background-image: linear-gradient(to right, rgba(255, 143, 112, 0.94), rgba(255, 61, 84, 0.94)), url("../images/bg-pattern-intro.svg");
+  background-size: auto;
+  background-position: 23% 52%;
+  border-bottom-left-radius: 10vh;
+  position: relative;
+  text-align: center; }
+  .header__nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10rem; }
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end; }
+    .header__nav .header__nav-list {
+      display: flex;
+      flex-grow: 2;
+      list-style: none;
+      margin-bottom: .5rem; }
+      .header__nav .header__nav-list li {
+        display: block;
+        padding: 0 2rem;
+        color: white;
+        width: 9.5rem; }
+    .header__nav a:link,
+    .header__nav a:visited {
+      text-decoration: none;
+      display: inline-block;
+      color: white; }
+      .header__nav a:link:hover,
+      .header__nav a:visited:hover {
+        text-decoration: underline;
+        font-weight: 500; }
+  .header .nav__buttons-box {
+    margin-left: auto; }
+  .header__text-box {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__logo {
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin-right: 2rem;
+    color: white; }
+  .header .arrow {
+    margin: .2rem; }
+
+.button {
+  line-height: 3rem; }
+  .button, .button:link, .button-visited {
+    width: 8.5rem;
+    display: inline-block;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 1.9rem;
+    margin: 0 .5rem;
+    transition: all .2s; }
+  .button--animated:hover {
+    transform: translateY(-0.3rem); }
+  .button--animated:active, .button--animated:focus {
+    transform: translateY(-0.1rem); }
+  .button--white {
+    color: #ff3d54;
+    background-color: white; }
+    .button--white:hover {
+      background-color: #ff7a85;
+      color: white; }
+  .button--transparent {
+    color: white; }
+    .button--transparent:hover {
+      color: #ff7a85;
+      background-color: white; }
+  .button--outlined {
+    border: 1px solid white; }
+    .button--outlined:hover {
+      border: 1px solid transparent; }
+
+.margin-top-big {
+  margin-top: 4rem; }
+
+.margin-top-medium {
+  margin-top: 3rem; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
+.margin-bottom-big {
+  margin-bottom: 4rem !important; }
+
+.margin-bottom-medium {
+  margin-bottom: 3rem !important; }
+
+.margin-bottom-small {
+  margin-bottom: 2rem !important; }

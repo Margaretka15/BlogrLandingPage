@@ -5,20 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Blogr]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Blogr</title>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  Product
 
-  Overview
-  Pricing
+  <header class="header">
+
+
+    <div class="header__nav-wrapper">
+
+      <div class="header__logo">Blogr</div>
+
+      <nav class="header__nav">
+
+        <ul class="header__nav-list">
+          <li>
+            <a href="#" class="link header__link">Products <i class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+              <path fill="none" stroke="#fff" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" /></svg></i> </a>
+          </li>
+          <li>
+            <a href="#" class="link header__link">Company
+              <i class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                <path fill="none" stroke="#fff" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" /></svg></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link header__link">Connect
+              <i class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                <path fill="none" stroke="#fff" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" /></svg></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav__buttons-box">
+
+        <a href="#" class="button button--transparent">Login</a>
+        <a href="#" class="button button button--white">Sign up</a>
+      </div>
+    </div>
+
+
+    <div class="header__text-box margin-top-medium">
+
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">
+          A modern publishing platform
+        </span>
+      </h1>
+      <h2 class="heading-primary--sub margin-bottom-big"> Grow your audience and build your online brand</h2>
+
+
+      <a href="#" class="button button--white button--outlined button--animated">Start for Free</a> <!--perhaps too many classes here? ;) -->
+      <a href="#" class="button button--transparent button--outlined  button--animated">Learn more</a>
+    </div>
+  </header>
+
+
+
+<!--
+
   Marketplace
   Features
   Integrations
@@ -95,5 +147,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  -->
 </body>
 </html>
