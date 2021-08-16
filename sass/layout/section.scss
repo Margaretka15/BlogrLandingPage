@@ -1,0 +1,46 @@
+.section{
+
+  position: relative;
+  padding: 8rem 10rem 12rem;
+  overflow: hidden;
+
+
+
+  &__wrapper{
+
+    position: relative;
+  }
+  &__text-container{
+    width: 45%;
+    display: block;
+
+  }
+  &__paragraph{
+    margin-bottom: 2rem;
+    line-height: 2em;
+  font-size: 1rem;
+
+
+
+
+  }
+  &__image{
+    width: 55%;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    transform: translateX(30%);
+    //transform: translate(40%, -20%);
+    //flex-grow: 1;
+    //position: absolute;
+    //right: 0;
+  }
+
+}
+
+.section:nth-child(even){
+  color:  $color-primary-dark-blue;
+}
+.section:nth-child(odd){
+  color: white;
+}
