@@ -1,40 +1,74 @@
 .section{
 
   position: relative;
-  padding: 8rem 10rem 12rem;
-  overflow: hidden;
 
 
+  &--big{
+    padding: 8rem 10rem 15rem;
+    overflow: hidden;
 
-  &__wrapper{
+    .section__image{
+      width: 55%;
+      position: absolute;
+      top: 2rem;
 
-    position: relative;
+
+      &--left{
+        left: 0;
+        transform: translateX(-28%);
+
+      }
+
+      &--right{
+        right: 0;
+        transform: translateX(30%);
+      }
+    }
+    .section__image--left ~ .section__text-container {
+      float: right;
+    }
   }
+  &--small{
+    background-image: linear-gradient(to right,rgba($color-gradient-gray-blue, .9), rgba($color-gradient-desaturated-blue, .9)), url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -50% 85%;
+    border-bottom-left-radius: 10vh;
+    border-top-right-radius: 10vh;
+    padding: 5rem 8rem 5rem;
+
+    .section__text-container{
+      //width: 50%;
+      float: right;
+      //margin-left: auto;
+
+    }
+    &::after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .section__image{
+      position: absolute;
+      top: 0;
+      transform: translateY(-25%);
+    }
+  }
+
   &__text-container{
-    width: 45%;
-    display: block;
+    width: 53%;
+    //display: block;
+
 
   }
   &__paragraph{
     margin-bottom: 2rem;
     line-height: 2em;
-  font-size: 1rem;
-
-
+    font-size: 1rem;
 
 
   }
-  &__image{
-    width: 55%;
-    position: absolute;
-    top: 2rem;
-    right: 0;
-    transform: translateX(30%);
-    //transform: translate(40%, -20%);
-    //flex-grow: 1;
-    //position: absolute;
-    //right: 0;
-  }
+
 
 }
 
@@ -42,5 +76,7 @@
   color:  $color-primary-dark-blue;
 }
 .section:nth-child(odd){
-  color: white;
+  color: $color-white;
+
+
 }
