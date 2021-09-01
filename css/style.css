@@ -77,7 +77,8 @@ body {
     font-size: 2.8rem;
     line-height: 2.8rem;
     margin-right: 2rem;
-    color: white; }
+    color: white;
+    display: block; }
   .header .arrow {
     margin: .2rem; }
 
@@ -127,6 +128,26 @@ body {
 
 .section:nth-child(odd) {
   color: white; }
+
+.footer {
+  background-color: #25252d;
+  border-top-right-radius: 10vh;
+  padding: 5rem 5rem 3rem; }
+  .footer__nav {
+    display: flex;
+    height: 100%;
+    justify-content: space-between; }
+  .footer__column {
+    flex-grow: 1; }
+    .footer__column .footer__title {
+      margin-bottom: 2rem;
+      display: inline-block;
+      font-weight: 700; }
+    .footer__column ul {
+      list-style: none; }
+      .footer__column ul li {
+        height: 2rem;
+        color: #c8c8cb; }
 
 .button {
   line-height: 3rem; }
