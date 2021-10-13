@@ -124,7 +124,9 @@ body {
     font-size: 1rem; }
 
 .section:nth-child(even) {
-  color: #1f3f5b; }
+  color: #4b5862; }
+  .section:nth-child(even) h1, .section:nth-child(even) h2, .section:nth-child(even) h3 {
+    color: #1f3f5b; }
 
 .section:nth-child(odd) {
   color: white; }

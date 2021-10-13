@@ -67,13 +67,19 @@
     font-size: 1rem;
 
 
+
   }
 
 
 }
 
 .section:nth-child(even){
-  color:  $color-primary-dark-blue;
+  h1, h2, h3{
+
+    color:  $color-primary-dark-blue;
+  }
+  color: $color-dark-grayish-blue;
+//color: red;
 }
 .section:nth-child(odd){
   color: $color-white;
